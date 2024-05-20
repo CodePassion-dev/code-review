@@ -28,10 +28,10 @@
 - Naming clear and consistent.
 - Code should be self-explain / self-documenting, remove unnecessary comments.
 - Appropriate names: class, structures, enums, methods, properties.
-- Boolean values should start with 'is can', 'should', "will', ...
+- Boolean values should start with `is`, `can`, `should`, `will`, ...
 - When in doubt - use longer names (adds more information) over shorter names (can bring confusion).
 - Every important event in the app should be logged.
 - The logs should contain enough information (class, function, parameters, severity).
 - Every public function should have a comment.
 - Every file contain a copyright.
-- Put /I TODO: Developer name - Which release - Description if needed.
+- Put TODO comments in format: `// TODO: Developer name - Which release - Description`.
