@@ -35,3 +35,22 @@
 - Every public function should have a comment.
 - Every file contain a copyright.
 - Put TODO comments in format: `// TODO: Developer name - Which release - Description`.
+
+# Performance check:
+
+- Remove `import ...` if not needed.
+- Remove unused variables / methods.
+- Remove all `print()` statements / unnecessary logging.
+- Prefer static constants over computed properties. (Need to revisit this point).
+- Use strings interpolation with `\()` instead of concatenation `+`.
+- Use `isEmpty` instead of `== nil`.
+- Use `!` instead of `== false`.
+- Instantiate DateFormatter only once.
+- Reuse cells.
+- Use image caching.
+- Use background threads where needed.
+- Memory leak / weak reference.
+- Closures should use `weak self`.
+- Delegates should be `weak`.
+- Check if `unowned` is misused.
+- Check for any retain cycles.
