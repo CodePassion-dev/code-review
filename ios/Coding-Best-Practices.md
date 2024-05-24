@@ -54,3 +54,15 @@
 - Delegates should be `weak`.
 - Check if `unowned` is misused.
 - Check for any retain cycles.
+
+# Testing:
+
+- All Unit Tests / Small Tests must be passed.
+- All Ul Tests / Medium Tests must be passed.
+- Multi screen sizes check.
+- ADA / Accessibility / Dynamic font size check.
+- Multi iOS versions / backward compatibility.
+- Multiple languages / text length.
+- Night mode / color contrast.
+- Declines / limits permission access (location, camera roll, contacts, etc).
+- Poor / offline internet connection.
