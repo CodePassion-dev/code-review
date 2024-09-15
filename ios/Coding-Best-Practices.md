@@ -1,16 +1,19 @@
-# Logic Check:
+# iOS Coding Best Practices
 
-- Story / Defect acceptance criteria.
-- Feature flag.
-- API calls failed / error handling.
-- Unused code.
-- Duplicate existing code - extract & reuse.
+## General
+
+- Matching story / defect acceptance criteria.
+- Duplicated code -> extract logic & reuse.
 - Magic number -> constants if needed.
-- MVP design pattern.
+- API calls failed / error handling.
+- Feature flag on / off.
+- MVVM / MVC / VIPER,... design pattern.
 
-# General:
+## Best Practices
 
 - Avoid hardcoding.
+- Avoid deep nesting: use inversion.
+- Merge related `if` / `guard` statements.
 - Remove 'self.' if not needed.
 - Remove extra lines if not needed.
 - Remove unused / commented code.
@@ -22,10 +25,10 @@
 - Custom code can be replaced with native approach?
 - Merge fetch / resolve all merge conflict.
 
-# Naming check:
+## Naming Check
 
 - Syntax: typo, camelCase, UpperCamelCase (types, protocols), SwiftLint.
-- Naming clear and consistent.
+- Naming clear and consistent: don't use names that only you can understand.
 - Code should be self-explain / self-documenting, remove unnecessary comments.
 - Appropriate names: class, structures, enums, methods, properties.
 - Boolean values should start with `is`, `can`, `should`, `will`, ...
@@ -36,7 +39,7 @@
 - Every file contain a copyright.
 - Put TODO comments in format: `// TODO: Developer name - Which release - Description`.
 
-# Performance check:
+## Performance Check
 
 - Remove `import ...` if not needed.
 - Remove unused variables / methods.
@@ -55,10 +58,10 @@
 - Check if `unowned` is misused.
 - Check for any retain cycles.
 
-# Testing:
+## Test / Validate Code Changed
 
-- All Unit Tests / Small Tests must be passed.
-- All Ul Tests / Medium Tests must be passed.
+- All Unit Tests must be passed.
+- All Ul Tests must be passed.
 - Multi screen sizes check.
 - ADA / Accessibility / Dynamic font size check.
 - Multi iOS versions / backward compatibility.
